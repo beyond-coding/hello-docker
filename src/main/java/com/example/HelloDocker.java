@@ -14,7 +14,7 @@ public class HelloDocker {
     @GetMapping
     public String hello() {
         return "Hello Docker.";
-    }çd
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(HelloDocker.class, args);
