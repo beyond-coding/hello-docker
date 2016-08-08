@@ -20,7 +20,7 @@ public class HelloDocker {
 
     @GetMapping("/counter")
     public String counter() {
-        return "The counter is " + counter;
+        return "The counter is " + counter++;
     }
 
     public static void main(String[] args) {
