@@ -11,9 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class HelloDocker {
 
+    private Integer counter = 0;
+
     @GetMapping
     public String hello() {
         return "Hello Docker.";
+    }
+
+    @GetMapping("/counter")
+    public String counter() {
+        return "The counter is " + counter;
     }
 
     public static void main(String[] args) {
