@@ -1,0 +1,12 @@
+-- step 1 - test
+mvn test package
+-- step 2 - dockerize
+mvn clean package
+docker build -t beyondcoding/hello-docker .
+docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+docker push beyondcoding/hello-docker
+-- step 3 - run
+docker tag -f beyondcoding/hello-docker 8080:8080
+docker run -d -p 8080:8080 beyondcoding/hello-docker
+sleep 30
+curl --fail http://localhost:8080
