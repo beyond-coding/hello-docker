@@ -42,7 +42,7 @@
 	<scm>
 		<url>https://github.com/beyond-coding/hello-docker</url>
 		<connection>scm:git:git://github.com/beyond-coding/hello-docker.git</connection>
-		<developerConnection>scm:git:git@github.com:guillermoherrero/hello-docker.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:beyond-coding/hello-docker.git</developerConnection>
 	</scm>
 
 	<developers>
