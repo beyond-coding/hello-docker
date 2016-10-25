@@ -43,7 +43,7 @@
 		<resources>
 			<resource>
 				<filtering>false</filtering>
-				<directory>src/main/docker</directory>
+				<directory>${basedir}/src/main/docker</directory>
 				<includes>
 					<include>Dockerfile</include>
 				</includes>
